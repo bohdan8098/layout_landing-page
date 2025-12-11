@@ -1,0 +1,90 @@
+.now-on-view {
+  .section-title {
+    margin-bottom: 8px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.5px;
+  }
+
+  &__description {
+    margin: 0;
+    padding-inline: 20px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 48px;
+  }
+
+  &__button {
+    display: block;
+    width: 280px;
+    height: 56px;
+    margin-inline: auto;
+    background-color: $color-red;
+    color: $color-white;
+    text-align: center;
+    line-height: 56px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+
+    @include hover(transform, scale(1.02));
+
+    .exhibition-item--third + & {
+      margin-top: 40px;
+    }
+  }
+}
+
+.exhibition-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 48px;
+
+  &__title {
+    margin: 0;
+    text-align: start;
+    font-weight: 700;
+    line-height: 27px;
+    color: $color-red;
+  }
+
+  &__date {
+    margin: 0;
+    font-weight: 400;
+    text-align: start;
+  }
+
+  &--first,
+  &--third {
+    .exhibition-item__pictures {
+      display: grid;
+      grid-template-columns: 130px 130px;
+      gap: 20px;
+      justify-content: center;
+
+      padding-inline: 20px;
+      box-sizing: content-box;
+      margin-bottom: 24px;
+
+      .exhibition-item__photo {
+        height: 130px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  &--second {
+    .exhibition-item__pictures--bodhisattvas {
+      display: grid;
+      grid-template-columns: 88px 88px 88px;
+      gap: 8px;
+      justify-content: center;
+
+      .exhibition-item__photo--bodhisattvas {
+        height: 87px;
+      }
+    }
+  }
+}

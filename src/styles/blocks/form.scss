@@ -1,0 +1,50 @@
+.form {
+  @include on-tablet {
+    max-width: none;
+
+    &__group {
+      margin-bottom: 16px;
+    }
+
+    &__input,
+    &__textarea {
+      box-sizing: border-box;
+      width: 100%;
+      height: 48px;
+      padding: 16px 20px;
+      background-color: #f8f8fa;
+      border: none;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #7e7e83;
+
+      &::placeholder {
+        font-family: Cinzel, serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #7e7e83;
+      }
+    }
+
+    &__textarea {
+      height: 144px;
+      resize: none;
+    }
+
+    &__button {
+      width: 100%;
+      height: 56px;
+      background-color: $color-red;
+      color: $color-white;
+      border: none;
+      cursor: pointer;
+
+      font-family: Cinzel, serif;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+}

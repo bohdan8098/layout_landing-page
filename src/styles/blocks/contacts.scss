@@ -1,0 +1,95 @@
+.contacts {
+  .section-title {
+    margin-bottom: 48px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-areas:
+      'info'
+      'form';
+    row-gap: 48px;
+  }
+
+  &__info {
+    grid-area: info;
+
+    & > :first-child {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__branch-title {
+    margin: 0;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+  }
+
+  &__label {
+    margin: 0;
+    margin-bottom: 2px;
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 400;
+    color: $main-text-color;
+  }
+
+  &__value {
+    display: block;
+    margin-bottom: 24px;
+    color: $main-text-color;
+
+    &--phone {
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 27px;
+    }
+
+    &--address {
+      font-size: 16px;
+      line-height: 140%;
+      font-weight: 700;
+    }
+  }
+}
+
+@include on-tablet {
+  .contacts {
+    &__content {
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas: 'info info info form form form';
+      gap: 0 24px;
+    }
+
+    &__info {
+      grid-area: info;
+      max-width: none;
+      margin-inline: 0;
+    }
+
+    &__form {
+      grid-area: form;
+    }
+  }
+}
+
+@include on-desktop {
+  .contacts {
+    &__content {
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas: 'info info info info info form form form form form form form';
+      column-gap: 24px;
+    }
+
+    &__info {
+      grid-column: 1 / span 5;
+    }
+
+    &__form {
+      grid-column: 6 / -1;
+    }
+  }
+}

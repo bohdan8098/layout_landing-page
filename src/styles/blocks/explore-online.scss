@@ -1,0 +1,33 @@
+.explore-online {
+  &__pictures {
+    display: grid;
+    row-gap: 48px;
+
+    @include on-tablet {
+      justify-items: center;
+    }
+
+    @include on-desktop {
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 24px;
+      justify-items: stretch;
+    }
+  }
+
+  .picture__title {
+    font-size: 24px;
+    line-height: 140%;
+    color: $color-red;
+    text-align: center;
+    margin-bottom: 4px;
+  }
+
+  .picture__description {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: center;
+  }
+}
