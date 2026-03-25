@@ -19,7 +19,9 @@
       defer
     ></script>
   </head>
-  <body class="page__body">
+  <body class="page__body" id="top">
+    <a href="#top" class="top-bar__logo-link"></a>
+
     <header class="header">
       <div class="container">
         <div class="header__content">
@@ -31,7 +33,7 @@
             </a>
 
             <div class="top-bar__icons">
-              <a href="#" class="icon icon--phone"></a>
+              <a href="tel:+1 212-535-7710" class="icon icon--phone"></a>
               <a href="#menu" class="icon icon--menu"></a>
             </div>
           </div>
@@ -65,7 +67,7 @@
                 <a class="nav__link" href="#about-us">About us</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#now-on-view">Now on viex</a>
+                <a class="nav__link" href="#now-on-view">Now on view</a>
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#explore-online">Explore online</a>
@@ -94,122 +96,136 @@
             <h2 class="section-title section-title--align--left">
               Museum Hours
             </h2>
+            <div class="about-us__schedules">
+              <div class="schedule">
+                <h3 class="subtitle">The Met Fifth Avenue</h3>
+                <div class="row">
+                  <div class="left">10 am - 5 pm</div>
+                  <div class="right">Sun, Mon, Tue, Thu</div>
+                </div>
+                <div class="row">
+                  <div class="left">10 am - 9 pm</div>
+                  <div class="right">Fri, Sat</div>
+                </div>
+                <div class="row">
+                  <div class="left">Closed</div>
+                  <div class="right">Wen</div>
+                </div>
 
-            <div class="schedule">
-              <h3 class="subtitle">The Met Fifth Avenue</h3>
-              <div class="row">
-                <div class="left">10 am - 5 pm</div>
-                <div class="right">Sun, Mon, Tue, Thu</div>
+                <h4 class="closed-on-title">Closed on</h4>
+                <p class="closed-on-text">Thanksgiving Day, Dec 25, Jan 1, and the first Monday in May.</p>
               </div>
-              <div class="row">
-                <div class="left">10 am - 9 pm</div>
-                <div class="right">Fri, Sat</div>
-              </div>
-              <div class="row">
-                <div class="left">Closed</div>
-                <div class="right">Wen</div>
-              </div>
+              <div class="schedule">
+                <h3 class="subtitle">The Met Cloisters</h3>
+                <div class="row">
+                  <div class="left">10 am - 4.30 pm</div>
+                  <div class="right">Thu - Tue</div>
+                </div>
+                <div class="row">
+                  <div class="left">Closed</div>
+                  <div class="right">Wen</div>
+                </div>
 
-              <h4 class="closed-on-title">Closed on</h4>
-              <p class="closed-on-text">Thanksgiving Day, Dec 25, Jan 1, and the first Monday in May.</p>
-            </div>
-            <div class="schedule">
-              <h3 class="subtitle">The Met Cloisters</h3>
-              <div class="row">
-                <div class="left">10 am - 4.30 pm</div>
-                <div class="right">Thu - Tue</div>
+                <h4 class="closed-on-title">Closed on</h4>
+                <p class="closed-on-text">Thanksgiving Day, Dec 25, Jan 1</p>
               </div>
-              <div class="row">
-                <div class="left">Closed</div>
-                <div class="right">Wen</div>
-              </div>
-
-              <h4 class="closed-on-title">Closed on</h4>
-              <p class="closed-on-text">Thanksgiving Day, Dec 25, Jan 1</p>
             </div>
           </section>
 
           <section class="now-on-view" id="now-on-view">
-            <h2 class="section-title">Now On View</h2>
+            <div class="title-container">
+              <h2 class="section-title">Now On View</h2>
 
-            <p class="now-on-view__description">
-              Explore exhibition gallery<br>
-              guides, videos, articles, and<br>
-              more.
-            </p>
+              <p class="now-on-view__description">
+                Explore exhibition gallery guides, videos, articles, and more.
+              </p>
+            </div>
 
             <div class="exhibition-item exhibition-item--first">
-              <div class="exhibition-item__pictures">
-                <img
-                  src="src/images/old-masters1-3x.png"
-                  alt="A New Look at Old Masters image 1"
-                  class="exhibition-item__photo"
-                />
-                <img
-                  src="src/images/old-masters2-3x.png"
-                  alt="A New Look at Old Masters image 2"
-                  class="exhibition-item__photo"
-                />
+              <div
+              class="exhibition-item__pictures">
+                <a href="#" class="exhibition-item__link">
+                  <img
+                    src="src/images/old-masters1-4x.png"
+                    alt="A New Look at Old Masters image 1"
+                    class="exhibition-item__photo"
+                  />
+                </a>
+                <a href="#" class="exhibition-item__link">
+                  <img
+                    src="src/images/old-masters2-3x.png"
+                    alt="A New Look at Old Masters image 2"
+                    class="exhibition-item__photo"
+                  />
+                </a>
               </div>
 
               <h3 class="exhibition-item__title">
-                A New Look at Old Masters
+                  A New Look at Old Masters
               </h3>
               <p class="exhibition-item__date">
-                December 12, 2020 - Through<br>
-                Spring 2023
+                  December 12, 2020 - Through Spring 2023
               </p>
             </div>
 
             <div class="exhibition-item exhibition-item--second">
               <div class="exhibition-item__pictures exhibition-item__pictures--bodhisattvas">
-                <img
-                  src="src/images/bodhisattvas1-3x.png"
-                  alt="Bodhisattvas image 1"
-                  class="exhibition-item__photo exhibition-item__photo--bodhisattvas"
-                />
-                <img
-                  src="src/images/bodhisattvas2-3x.png"
-                  alt="Bodhisattvas image 2"
-                  class="exhibition-item__photo exhibition-item__photo--bodhisattvas"
-                />
-                <img
-                  src="src/images/bodhisattvas3-3x.png"
-                  alt="Bodhisattvas image 3"
-                  class="exhibition-item__photo exhibition-item__photo--bodhisattvas"
-                />
+                <a href="#" class="exhibition-item__link"> <img
+                    src="src/images/bodhisattvas1-3x.png"
+                    alt="Bodhisattvas image 1"
+                    class="exhibition-item__photo exhibition-item__photo--bodhisattvas"
+                  />
+                </a>
+
+                <a href="#" class="exhibition-item__link">
+                  <img
+                    src="src/images/bodhisattvas2-3x.png"
+                    alt="Bodhisattvas image 2"
+                    class="exhibition-item__photo exhibition-item__photo--bodhisattvas"
+                  />
+                </a>
+
+                <a href="#" class="exhibition-item__link exhibition-item__link--hide-tablet">
+                  <img
+                    src="src/images/bodhisattvas3-3x.png"
+                    alt="Bodhisattvas image 3"
+                    class="exhibition-item__photo exhibition-item__photo--bodhisattvas"
+                  />
+                </a>
               </div>
 
               <h3 class="exhibition-item__title">
-                Bodhisattvas of Wisdom,<br>
-                Compassion, and Power
+                  Bodhisattvas of Wisdom, Compassion, and Power
               </h3>
               <p class="exhibition-item__date">
-                March 27, 2021 - October 30, 2022
+                  March 27, 2021 - October 30, 2022
               </p>
             </div>
 
             <div class="exhibition-item exhibition-item--third">
               <div class="exhibition-item__pictures">
-                <img
-                  src="src/images/walt-disney1-3-x.png"
-                  alt="Inspiring Walt Disney image 1"
-                  class="exhibition-item__photo"
-                />
-                <img
-                  src="src/images/walt-disney2-3-x.png"
-                  alt="Inspiring Walt Disney image 2"
-                  class="exhibition-item__photo"
-                />
+                <a href="#" class="exhibition-item__link">
+                  <img
+                      src="src/images/walt-disney1-3-x.png"
+                      alt="Inspiring Walt Disney image 1"
+                      class="exhibition-item__photo"
+                    />
+                </a>
+
+                <a href="#" class="exhibition-item__link">
+                  <img
+                      src="src/images/walt-disney2-3-x.png"
+                      alt="Inspiring Walt Disney image 2"
+                      class="exhibition-item__photo"
+                    />
+                </a>
               </div>
 
               <h3 class="exhibition-item__title">
-                Inspiring Walt Disney:<br>
-                The Animation of French<br>
-                Decorative Arts
+                  Inspiring Walt Disney: The Animation of French Decorative Arts
               </h3>
               <p class="exhibition-item__date">
-                December 10, 2021 - March 6, 2022
+                  December 10, 2021 - March 6, 2022
               </p>
             </div>
 
@@ -217,50 +233,52 @@
           </section>
 
           <section class="explore-online" id="explore-online">
-            <h2 class="section-title">More to Explore<br> Online</h2>
+            <div class="title-container">
+              <h2 class="section-title">More to Explore Online
+              </h2>
+            </div>
 
             <div class="explore-online__pictures">
               <article class="picture">
-                <img
+                <a href="#" class="explore-online__link">
+                  <img
                   src="./src/images/collection-areas-3x.png"
                   alt="Collection areas"
                   class="picture__photo"
                 >
+                </a>
+
                 <h3 class="picture__title">Collection Areas</h3>
                 <p class="picture__description">
-                  These collection areas study, exhibit,<br>
-                  and care for the objects in The Met<br>
-                  collection.
+                  These collection areas study, exhibit, and care for the objects in The Met collection.
                 </p>
               </article>
 
               <article class="picture">
-                <img
+                <a href="#" class="explore-online__link">
+                  <img
                   src="./src/images/travel-3x.png"
                   alt="Travel"
                   class="picture__photo"
                 >
+                </a>
                 <h3 class="picture__title">Travel</h3>
                 <p class="picture__description">
-                  Travel with The Met connects the<br>
-                  Museum's wide and diverse audience<br>
-                  to art, inspiration, and historical<br>
-                  perspective.
+                  Travel with The Met connects the Museum's wide and diverse audience to art, inspiration, and historical perspective.
                 </p>
               </article>
 
               <article class="picture">
-                <img
+                <a href="#" class="explore-online__link">
+                  <img
                   src="./src/images/group-tours-3x.png"
                   alt="Virtual group tours"
                   class="picture__photo"
                 >
+                </a>
                 <h3 class="picture__title">Virtual group tours</h3>
                 <p class="picture__description">
-                  Request a guided tour, reserve<br>
-                  admission and lead your own small<br>
-                  group, or request a live virtual tour led<br>
-                  by a Museum guide.
+                  Request a guided tour, reserve admission and lead your own small group, or request a live virtual tour led by a Museum guide.
                 </p>
               </article>
             </div>
@@ -281,8 +299,12 @@
 
                   <p class="contacts__label">Address</p>
                   <address class="contacts__value contacts__value--address">
+                    <a href="https://www.google.com/maps/search/?api=1&query=The+Met+Fifth+Avenue+New+York"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     1000 Fifth Avenue<br />
                     New York, NY 10028
+                    </a>
                   </address>
                 </div>
 
@@ -296,31 +318,43 @@
 
                   <p class="contacts__label">Address</p>
                   <address class="contacts__value contacts__value--address">
+                    <a href="https://www.google.com/maps/search/?api=1&query=The+Met+Cloisters+New+York"
+                    target="_blank"
+                    rel="noopener noreferrer">
                     99 Margaret Corbin Drive<br>
                     Fort Tryon Park<br>
                     New York, NY 10040
+                    </a>
                   </address>
                 </div>
               </div>
 
-              <form class="contacts__form form">
-                <div class="form__group">
-                  <input class="form__input" type="text"
-                  id="name" placeholder="Name"/>
+              <form class="contacts__form form" onsubmit="this.reset(); return false;">
+
+                <div
+                  class="form__group">
+                  <input class="form__input"
+                  type="text"
+                  placeholder="Name" required
+                  />
                 </div>
 
                 <div class="form__group">
-                  <input class="form__input" type="email"
-                  id="email" placeholder="Email" />
+                  <input class="form__input"
+                  type="email"
+                  placeholder="Email" required
+                  />
                 </div>
 
                 <div class="form__group">
                   <textarea class="form__textarea"
-                  id="message" placeholder="Message"></textarea>
+                  type="text"
+                  placeholder="Message" required></textarea>
                 </div>
 
                 <button type="submit" class="form__button">Send</button>
               </form>
+
             </div>
           </section>
         </div>

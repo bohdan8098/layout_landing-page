@@ -25,12 +25,45 @@
 }
 
 .container {
-  @include content-padding-inline;
+  max-width: 1260px;
+  margin: 0 auto;
+  padding-inline: 20px;
+
+  @include on-tablet {
+    padding-inline: 32px;
+  }
+
+  @include on-desktop {
+    padding-inline: 120px;
+  }
 }
 
 @mixin hover($property, $toValue) {
   transition: #{$property} $effectDuration;
   &:hover {
     #{$property}: $toValue;
+  }
+}
+
+@mixin animated-underline($bottom: 0) {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: $bottom;
+    left: 0;
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: currentColor;
+
+    transition: transform $effectDuration;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
   }
 }
